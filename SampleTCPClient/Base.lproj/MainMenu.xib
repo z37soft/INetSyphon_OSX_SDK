@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6233" systemVersion="14A329f" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6233"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9060"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -11,19 +11,21 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="">
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
-                <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
+                <outlet property="glView" destination="5EQ-Sp-LLJ" id="pUL-mY-AeB"/>
+                <outlet property="m_TCPSyphonServerPopupButton" destination="3Yx-eT-Evc" id="yPs-8e-wRf"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="d4P-u9-gq5"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
-                <menuItem title="INetSyphon_OSX_SDK" id="1Xt-HY-uBw">
+                <menuItem title="SampleTCPClient" id="1Xt-HY-uBw">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="INetSyphon_OSX_SDK" systemMenu="apple" id="uQy-DD-JDr">
+                    <menu key="submenu" title="SampleTCPClient" systemMenu="apple" id="uQy-DD-JDr">
                         <items>
-                            <menuItem title="About INetSyphon_OSX_SDK" id="5kV-Vb-QxS">
+                            <menuItem title="About SampleTCPClient" id="5kV-Vb-QxS">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
@@ -37,7 +39,7 @@
                                 <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                            <menuItem title="Hide INetSyphon_OSX_SDK" keyEquivalent="h" id="Olw-nP-bQN">
+                            <menuItem title="Hide SampleTCPClient" keyEquivalent="h" id="Olw-nP-bQN">
                                 <connections>
                                     <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
                                 </connections>
@@ -55,7 +57,7 @@
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                            <menuItem title="Quit INetSyphon_OSX_SDK" keyEquivalent="q" id="4sb-4s-VLi">
+                            <menuItem title="Quit SampleTCPClient" keyEquivalent="q" id="4sb-4s-VLi">
                                 <connections>
                                     <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
                                 </connections>
@@ -656,7 +658,7 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                         <items>
-                            <menuItem title="INetSyphon_OSX_SDK Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                            <menuItem title="SampleTCPClient Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                 <connections>
                                     <action selector="showHelp:" target="-1" id="y7X-2Q-9no"/>
                                 </connections>
@@ -666,14 +668,56 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="INetSyphon_OSX_SDK" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+        <window title="SampleTCPClient" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <openGLView useAuxiliaryDepthBufferStencil="NO" allowOffline="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5EQ-Sp-LLJ" customClass="GLView">
+                        <rect key="frame" x="20" y="20" width="440" height="280"/>
+                    </openGLView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uEl-xn-s8B">
+                        <rect key="frame" x="18" y="321" width="137" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="SoI-XA-AOb"/>
+                            <constraint firstAttribute="width" constant="133" id="yH8-wu-G6L"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="TCPSyphon Server:" id="uJn-Ov-QEh">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Yx-eT-Evc">
+                        <rect key="frame" x="159" y="316" width="304" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Sve-jj-I5Y"/>
+                        </constraints>
+                        <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="9rP-Ei-NJz">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" id="ET7-LL-v8o"/>
+                        </popUpButtonCell>
+                        <connections>
+                            <action selector="ChangedTCPSyphonServerPopupButton:" target="Voe-Tx-rLC" id="UDG-Lt-dSf"/>
+                        </connections>
+                    </popUpButton>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="5EQ-Sp-LLJ" secondAttribute="bottom" constant="20" id="Cqh-pm-M8C"/>
+                    <constraint firstItem="5EQ-Sp-LLJ" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="P5V-VW-tiA"/>
+                    <constraint firstAttribute="trailing" secondItem="3Yx-eT-Evc" secondAttribute="trailing" constant="20" id="PYF-O3-VU7"/>
+                    <constraint firstItem="uEl-xn-s8B" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="UyT-qu-Tmk"/>
+                    <constraint firstItem="3Yx-eT-Evc" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="dtQ-vO-jdf"/>
+                    <constraint firstItem="3Yx-eT-Evc" firstAttribute="leading" secondItem="uEl-xn-s8B" secondAttribute="trailing" constant="8" id="jMl-CS-8Ls"/>
+                    <constraint firstAttribute="trailing" secondItem="5EQ-Sp-LLJ" secondAttribute="trailing" constant="20" id="r96-k1-6jh"/>
+                    <constraint firstItem="5EQ-Sp-LLJ" firstAttribute="top" secondItem="3Yx-eT-Evc" secondAttribute="bottom" constant="19" id="sWC-WP-68Q"/>
+                    <constraint firstItem="uEl-xn-s8B" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="22" id="y2S-he-m9V"/>
+                </constraints>
             </view>
         </window>
     </objects>

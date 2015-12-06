@@ -7,27 +7,108 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D5B4B4651C141F50003F3EEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B4B4641C141F50003F3EEE /* AppDelegate.m */; };
-		D5B4B4681C141F50003F3EEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B4B4671C141F50003F3EEE /* main.m */; };
-		D5B4B46A1C141F50003F3EEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5B4B4691C141F50003F3EEE /* Assets.xcassets */; };
-		D5B4B46D1C141F50003F3EEE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5B4B46B1C141F50003F3EEE /* MainMenu.xib */; };
+		D5B4B47C1C141F72003F3EEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B4B47B1C141F72003F3EEE /* AppDelegate.m */; };
+		D5B4B47F1C141F72003F3EEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B4B47E1C141F72003F3EEE /* main.m */; };
+		D5B4B4811C141F72003F3EEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5B4B4801C141F72003F3EEE /* Assets.xcassets */; };
+		D5B4B4841C141F72003F3EEE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5B4B4821C141F72003F3EEE /* MainMenu.xib */; };
+		D5B4B4911C142204003F3EEE /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B4B4901C142204003F3EEE /* GLView.m */; };
+		D5B4B4951C142470003F3EEE /* libturbojpeg.0.dylib in Copy TurboJpeg Files */ = {isa = PBXBuildFile; fileRef = D5B4B48B1C1421C4003F3EEE /* libturbojpeg.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D5B4B4FD1C142DC6003F3EEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B4B4FC1C142DC6003F3EEE /* AppDelegate.m */; };
+		D5B4B5001C142DC6003F3EEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B4B4FF1C142DC6003F3EEE /* main.m */; };
+		D5B4B5021C142DC6003F3EEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5B4B5011C142DC6003F3EEE /* Assets.xcassets */; };
+		D5B4B5051C142DC6003F3EEE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5B4B5031C142DC6003F3EEE /* MainMenu.xib */; };
+		D5B4B50E1C142E09003F3EEE /* libturbojpeg.0.dylib in Copy TurboJpeg Files */ = {isa = PBXBuildFile; fileRef = D5B4B48B1C1421C4003F3EEE /* libturbojpeg.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D5B4B5111C142E97003F3EEE /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B4B5101C142E97003F3EEE /* GLView.m */; };
+		D5B4B5151C143207003F3EEE /* TL_INetSyphonSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B4B5131C1431ED003F3EEE /* TL_INetSyphonSDK.framework */; };
+		D5B4B5161C14320C003F3EEE /* TL_INetSyphonSDK.framework in Copy Framework Files */ = {isa = PBXBuildFile; fileRef = D5B4B5131C1431ED003F3EEE /* TL_INetSyphonSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D5B4B5171C143216003F3EEE /* TL_INetSyphonSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B4B5131C1431ED003F3EEE /* TL_INetSyphonSDK.framework */; };
+		D5B4B5181C143219003F3EEE /* TL_INetSyphonSDK.framework in Copy Framework Files */ = {isa = PBXBuildFile; fileRef = D5B4B5131C1431ED003F3EEE /* TL_INetSyphonSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D5B4B4921C142448003F3EEE /* Copy Framework Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D5B4B5161C14320C003F3EEE /* TL_INetSyphonSDK.framework in Copy Framework Files */,
+			);
+			name = "Copy Framework Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5B4B4941C14245F003F3EEE /* Copy TurboJpeg Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				D5B4B4951C142470003F3EEE /* libturbojpeg.0.dylib in Copy TurboJpeg Files */,
+			);
+			name = "Copy TurboJpeg Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5B4B50B1C142DDC003F3EEE /* Copy Framework Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D5B4B5181C143219003F3EEE /* TL_INetSyphonSDK.framework in Copy Framework Files */,
+			);
+			name = "Copy Framework Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5B4B50D1C142DF8003F3EEE /* Copy TurboJpeg Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				D5B4B50E1C142E09003F3EEE /* libturbojpeg.0.dylib in Copy TurboJpeg Files */,
+			);
+			name = "Copy TurboJpeg Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		D5B4B4601C141F50003F3EEE /* INetSyphon_OSX_SDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = INetSyphon_OSX_SDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5B4B4631C141F50003F3EEE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D5B4B4641C141F50003F3EEE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D5B4B4671C141F50003F3EEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D5B4B4691C141F50003F3EEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D5B4B46C1C141F50003F3EEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		D5B4B46E1C141F50003F3EEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5B4B4781C141F72003F3EEE /* SampleTCPServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleTCPServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B4B47A1C141F72003F3EEE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D5B4B47B1C141F72003F3EEE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D5B4B47E1C141F72003F3EEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D5B4B4801C141F72003F3EEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5B4B4831C141F72003F3EEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D5B4B4851C141F72003F3EEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5B4B48B1C1421C4003F3EEE /* libturbojpeg.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libturbojpeg.0.dylib; path = Lib/libturbojpeg.0.dylib; sourceTree = "<group>"; };
+		D5B4B48F1C142204003F3EEE /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
+		D5B4B4901C142204003F3EEE /* GLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLView.m; sourceTree = "<group>"; };
+		D5B4B4F91C142DC5003F3EEE /* SampleTCPClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleTCPClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B4B4FB1C142DC6003F3EEE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D5B4B4FC1C142DC6003F3EEE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D5B4B4FF1C142DC6003F3EEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D5B4B5011C142DC6003F3EEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5B4B5041C142DC6003F3EEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D5B4B5061C142DC6003F3EEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5B4B50F1C142E97003F3EEE /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
+		D5B4B5101C142E97003F3EEE /* GLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLView.m; sourceTree = "<group>"; };
+		D5B4B5131C1431ED003F3EEE /* TL_INetSyphonSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TL_INetSyphonSDK.framework; path = Frameworks/TL_INetSyphonSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D5B4B45D1C141F50003F3EEE /* Frameworks */ = {
+		D5B4B4751C141F72003F3EEE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5B4B5151C143207003F3EEE /* TL_INetSyphonSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5B4B4F61C142DC5003F3EEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B4B5171C143216003F3EEE /* TL_INetSyphonSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,7 +118,10 @@
 		D5B4B4571C141F50003F3EEE = {
 			isa = PBXGroup;
 			children = (
-				D5B4B4621C141F50003F3EEE /* INetSyphon_OSX_SDK */,
+				D5B4B48A1C1421AA003F3EEE /* Frameworks */,
+				D5B4B4891C14219F003F3EEE /* Lib */,
+				D5B4B4791C141F72003F3EEE /* SampleTCPServer */,
+				D5B4B4FA1C142DC6003F3EEE /* SampleTCPClient */,
 				D5B4B4611C141F50003F3EEE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,28 +129,70 @@
 		D5B4B4611C141F50003F3EEE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D5B4B4601C141F50003F3EEE /* INetSyphon_OSX_SDK.app */,
+				D5B4B4781C141F72003F3EEE /* SampleTCPServer.app */,
+				D5B4B4F91C142DC5003F3EEE /* SampleTCPClient.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D5B4B4621C141F50003F3EEE /* INetSyphon_OSX_SDK */ = {
+		D5B4B4791C141F72003F3EEE /* SampleTCPServer */ = {
 			isa = PBXGroup;
 			children = (
-				D5B4B4631C141F50003F3EEE /* AppDelegate.h */,
-				D5B4B4641C141F50003F3EEE /* AppDelegate.m */,
-				D5B4B4691C141F50003F3EEE /* Assets.xcassets */,
-				D5B4B46B1C141F50003F3EEE /* MainMenu.xib */,
-				D5B4B46E1C141F50003F3EEE /* Info.plist */,
-				D5B4B4661C141F50003F3EEE /* Supporting Files */,
+				D5B4B47A1C141F72003F3EEE /* AppDelegate.h */,
+				D5B4B47B1C141F72003F3EEE /* AppDelegate.m */,
+				D5B4B48F1C142204003F3EEE /* GLView.h */,
+				D5B4B4901C142204003F3EEE /* GLView.m */,
+				D5B4B4801C141F72003F3EEE /* Assets.xcassets */,
+				D5B4B4821C141F72003F3EEE /* MainMenu.xib */,
+				D5B4B4851C141F72003F3EEE /* Info.plist */,
+				D5B4B47D1C141F72003F3EEE /* Supporting Files */,
 			);
-			path = INetSyphon_OSX_SDK;
+			path = SampleTCPServer;
 			sourceTree = "<group>";
 		};
-		D5B4B4661C141F50003F3EEE /* Supporting Files */ = {
+		D5B4B47D1C141F72003F3EEE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D5B4B4671C141F50003F3EEE /* main.m */,
+				D5B4B47E1C141F72003F3EEE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5B4B4891C14219F003F3EEE /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				D5B4B48B1C1421C4003F3EEE /* libturbojpeg.0.dylib */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		D5B4B48A1C1421AA003F3EEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5B4B5131C1431ED003F3EEE /* TL_INetSyphonSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5B4B4FA1C142DC6003F3EEE /* SampleTCPClient */ = {
+			isa = PBXGroup;
+			children = (
+				D5B4B4FB1C142DC6003F3EEE /* AppDelegate.h */,
+				D5B4B4FC1C142DC6003F3EEE /* AppDelegate.m */,
+				D5B4B50F1C142E97003F3EEE /* GLView.h */,
+				D5B4B5101C142E97003F3EEE /* GLView.m */,
+				D5B4B5011C142DC6003F3EEE /* Assets.xcassets */,
+				D5B4B5031C142DC6003F3EEE /* MainMenu.xib */,
+				D5B4B5061C142DC6003F3EEE /* Info.plist */,
+				D5B4B4FE1C142DC6003F3EEE /* Supporting Files */,
+			);
+			path = SampleTCPClient;
+			sourceTree = "<group>";
+		};
+		D5B4B4FE1C142DC6003F3EEE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5B4B4FF1C142DC6003F3EEE /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -74,21 +200,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D5B4B45F1C141F50003F3EEE /* INetSyphon_OSX_SDK */ = {
+		D5B4B4771C141F72003F3EEE /* SampleTCPServer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D5B4B4711C141F50003F3EEE /* Build configuration list for PBXNativeTarget "INetSyphon_OSX_SDK" */;
+			buildConfigurationList = D5B4B4861C141F72003F3EEE /* Build configuration list for PBXNativeTarget "SampleTCPServer" */;
 			buildPhases = (
-				D5B4B45C1C141F50003F3EEE /* Sources */,
-				D5B4B45D1C141F50003F3EEE /* Frameworks */,
-				D5B4B45E1C141F50003F3EEE /* Resources */,
+				D5B4B4741C141F72003F3EEE /* Sources */,
+				D5B4B4751C141F72003F3EEE /* Frameworks */,
+				D5B4B4761C141F72003F3EEE /* Resources */,
+				D5B4B4921C142448003F3EEE /* Copy Framework Files */,
+				D5B4B4941C14245F003F3EEE /* Copy TurboJpeg Files */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = INetSyphon_OSX_SDK;
-			productName = INetSyphon_OSX_SDK;
-			productReference = D5B4B4601C141F50003F3EEE /* INetSyphon_OSX_SDK.app */;
+			name = SampleTCPServer;
+			productName = SampleTCPServer;
+			productReference = D5B4B4781C141F72003F3EEE /* SampleTCPServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5B4B4F81C142DC5003F3EEE /* SampleTCPClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5B4B5071C142DC6003F3EEE /* Build configuration list for PBXNativeTarget "SampleTCPClient" */;
+			buildPhases = (
+				D5B4B4F51C142DC5003F3EEE /* Sources */,
+				D5B4B4F61C142DC5003F3EEE /* Frameworks */,
+				D5B4B4F71C142DC5003F3EEE /* Resources */,
+				D5B4B50B1C142DDC003F3EEE /* Copy Framework Files */,
+				D5B4B50D1C142DF8003F3EEE /* Copy TurboJpeg Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleTCPClient;
+			productName = SampleTCPClient;
+			productReference = D5B4B4F91C142DC5003F3EEE /* SampleTCPClient.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +247,10 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "TECHLIFE SG Pte.Ltd.";
 				TargetAttributes = {
-					D5B4B45F1C141F50003F3EEE = {
+					D5B4B4771C141F72003F3EEE = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					D5B4B4F81C142DC5003F3EEE = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
 				};
@@ -118,40 +268,69 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D5B4B45F1C141F50003F3EEE /* INetSyphon_OSX_SDK */,
+				D5B4B4771C141F72003F3EEE /* SampleTCPServer */,
+				D5B4B4F81C142DC5003F3EEE /* SampleTCPClient */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D5B4B45E1C141F50003F3EEE /* Resources */ = {
+		D5B4B4761C141F72003F3EEE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5B4B46A1C141F50003F3EEE /* Assets.xcassets in Resources */,
-				D5B4B46D1C141F50003F3EEE /* MainMenu.xib in Resources */,
+				D5B4B4811C141F72003F3EEE /* Assets.xcassets in Resources */,
+				D5B4B4841C141F72003F3EEE /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5B4B4F71C142DC5003F3EEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B4B5021C142DC6003F3EEE /* Assets.xcassets in Resources */,
+				D5B4B5051C142DC6003F3EEE /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D5B4B45C1C141F50003F3EEE /* Sources */ = {
+		D5B4B4741C141F72003F3EEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5B4B4681C141F50003F3EEE /* main.m in Sources */,
-				D5B4B4651C141F50003F3EEE /* AppDelegate.m in Sources */,
+				D5B4B47F1C141F72003F3EEE /* main.m in Sources */,
+				D5B4B47C1C141F72003F3EEE /* AppDelegate.m in Sources */,
+				D5B4B4911C142204003F3EEE /* GLView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5B4B4F51C142DC5003F3EEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B4B5001C142DC6003F3EEE /* main.m in Sources */,
+				D5B4B4FD1C142DC6003F3EEE /* AppDelegate.m in Sources */,
+				D5B4B5111C142E97003F3EEE /* GLView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D5B4B46B1C141F50003F3EEE /* MainMenu.xib */ = {
+		D5B4B4821C141F72003F3EEE /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D5B4B46C1C141F50003F3EEE /* Base */,
+				D5B4B4831C141F72003F3EEE /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		D5B4B5031C142DC6003F3EEE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5B4B5041C142DC6003F3EEE /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -166,7 +345,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -195,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -209,7 +388,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -232,32 +411,84 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		D5B4B4721C141F50003F3EEE /* Debug */ = {
+		D5B4B4871C141F72003F3EEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = INetSyphon_OSX_SDK/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = SampleTCPServer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "sg.techlife.INetSyphon-OSX-SDK";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sg.techlife.SampleTCPServer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		D5B4B4731C141F50003F3EEE /* Release */ = {
+		D5B4B4881C141F72003F3EEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = INetSyphon_OSX_SDK/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = SampleTCPServer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "sg.techlife.INetSyphon-OSX-SDK";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sg.techlife.SampleTCPServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D5B4B5081C142DC6003F3EEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = SampleTCPClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.techlife.SampleTCPClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D5B4B5091C142DC6003F3EEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = SampleTCPClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.techlife.SampleTCPClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -274,13 +505,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D5B4B4711C141F50003F3EEE /* Build configuration list for PBXNativeTarget "INetSyphon_OSX_SDK" */ = {
+		D5B4B4861C141F72003F3EEE /* Build configuration list for PBXNativeTarget "SampleTCPServer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D5B4B4721C141F50003F3EEE /* Debug */,
-				D5B4B4731C141F50003F3EEE /* Release */,
+				D5B4B4871C141F72003F3EEE /* Debug */,
+				D5B4B4881C141F72003F3EEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5B4B5071C142DC6003F3EEE /* Build configuration list for PBXNativeTarget "SampleTCPClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5B4B5081C142DC6003F3EEE /* Debug */,
+				D5B4B5091C142DC6003F3EEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

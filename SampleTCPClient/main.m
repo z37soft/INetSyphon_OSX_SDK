@@ -1,6 +1,6 @@
 //
 //  main.m
-//  INetSyphon_OSX_SDK
+//  SampleTCPClient
 //
 //  Created by Nozomu MIURA on 2015/12/06.
 //  Copyright © 2015年 TECHLIFE SG Pte.Ltd. All rights reserved.

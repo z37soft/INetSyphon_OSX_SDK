@@ -9,10 +9,30 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>SampleTCPClient.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>SampleTCPServer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>D5B4B45F1C141F50003F3EEE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D5B4B4771C141F72003F3EEE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D5B4B4F81C142DC5003F3EEE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
