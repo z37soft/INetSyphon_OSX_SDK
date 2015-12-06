@@ -1,0 +1,6 @@
+framework module TL_INetSyphonSDK {
+  umbrella header "TL_INetSyphonSDK.h"
+
+  export *
+  module * { export * }
+}
