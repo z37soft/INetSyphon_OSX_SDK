@@ -432,6 +432,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Lib",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = sg.techlife.SampleTCPServer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -452,6 +453,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Lib",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = sg.techlife.SampleTCPServer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -469,7 +471,7 @@
 				);
 				INFOPLIST_FILE = SampleTCPClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = sg.techlife.SampleTCPClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -487,7 +489,7 @@
 				);
 				INFOPLIST_FILE = SampleTCPClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = sg.techlife.SampleTCPClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
