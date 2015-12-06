@@ -6,8 +6,8 @@ Deployment Target: OSX 10.8+
 Add: TCPSyphon server and TCPSyphon client.
 
 Todo
-Add UDPSyphon server and client.
-Add INetSyphon SDK for iOS.
+
+UDPSyphon server and client sample project. and INetSyphon SDK for iOS, RaspberryPi, Android.
 
 
 About SIGPIPE.
