@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "TL_INetSyphonSDK/TL_INetUDPSyphonSDK.h"
+#import "TL_INetSyphonSDK/TL_INetSyphonSDK.h"
 #import "GLView.h"
 
 @interface UDPServerAppDelegate : NSObject <NSApplicationDelegate>
