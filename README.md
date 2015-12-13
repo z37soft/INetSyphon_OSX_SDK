@@ -1,13 +1,14 @@
-# INetSyphon SDK for OSX ( draft )
+# INetSyphon SDK for OSX
 
 Requires: Xcode 7.1+  
 Deployment Target: OSX 10.8+
 
 Add: TCPSyphon server and TCPSyphon client.
+Add: UDPSyphon server and UDPSyphon client.
 
 Todo
 
-UDPSyphon server and client sample project. and INetSyphon SDK for iOS, RaspberryPi, Android.
+INetSyphon SDK for iOS, RaspberryPi, Android.
 
 
 About SIGPIPE.
