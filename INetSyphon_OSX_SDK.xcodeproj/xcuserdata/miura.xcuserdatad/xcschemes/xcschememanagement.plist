@@ -12,16 +12,36 @@
 		<key>SampleTCPClient.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>2</integer>
 		</dict>
 		<key>SampleTCPServer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>1</integer>
+		</dict>
+		<key>SampleUDPClient.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>SampleUDPServer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>D58FF38A1C1B36B4007F3324</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D58FF39F1C1B3890007F3324</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>D5B4B45F1C141F50003F3EEE</key>
 		<dict>
 			<key>primary</key>
