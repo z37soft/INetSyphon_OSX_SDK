@@ -36,8 +36,8 @@
 
 //-=-= CLIENT SECTION -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 //Control client
--(void)StartClientByPort:(NSUInteger)port MulticastGroup:(NSString*)multicastgroup SourceIPAddress:(NSString*)sourceIPAddress;
--(void)StopClient;
+-(void)StartClient:(CGLContextObj)cgl_ctx Port:(NSUInteger)port MulticastGroup:(NSString*)multicastgroup SourceIPAddress:(NSString*)sourceIPAddress;
+-(void)StopClient:(CGLContextObj)cgl_ctx;
 
 -(void)ClientIdle:(CGLContextObj)cgl_ctx;
 -(int)GetReceiveTextureFromUDPSyphonServer:(GLuint*)texture Resolution:(CGSize*)texturesize TextureTarget:(GLenum*)texturetarget;
