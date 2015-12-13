@@ -4,7 +4,14 @@ Requires: Xcode 7.1+
 Deployment Target: OSX 10.8+
 
 Add: TCPSyphon server and TCPSyphon client.
+
 Add: UDPSyphon server and UDPSyphon client.
+
+
+About TCPSyphon: http://techlife.sg/TCPSyphon/
+
+About UDPSyphon: http://techlife.sg/UDPSyphon/
+
 
 Todo
 
