@@ -15,6 +15,7 @@
 -(void)setup
 {
     m_TCPSyphonSDK = [[TL_INetTCPSyphonSDK alloc] init];
+    [m_TCPSyphonSDK SetRequestPort:0];//If you want to set a fixed port, you can set it at here. zero is default(choose automatically).
     [m_TCPSyphonSDK StartServer:@"SimpleTCPServer"];
     
     [m_TCPSyphonSDK SetEncodeType:TCPUDPSyphonEncodeType_TURBOJPEG];

@@ -28,6 +28,8 @@
 -(void)SetEncodeType:(TCPUDPSyphonEncodeType)encodetype;
 //Default encode quality: 0.5 ( bad:0.0, good:1.0 )
 -(void)SetEncodeQuality:(float)quality;
+//If you want to set a fixed network port, then you should use this method. 0 is default(choose automatically).
+-(void)SetRequestPort:(int)port;
 
 //get information
 -(NSDictionary*)GetSyphonServerInformation;

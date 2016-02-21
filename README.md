@@ -26,7 +26,7 @@ License
 ------------
 Simplified BSD license,
 
-     Copyright 2015 z37soft (Nozomu Miura). All rights reserved.
+     Copyright 2015-2016 z37soft (Nozomu Miura). All rights reserved.
      
      Redistribution and use in source and binary forms, with or without
      modification, are permitted provided that the following conditions are met:
