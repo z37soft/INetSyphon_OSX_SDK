@@ -13,7 +13,7 @@
 
 @interface UDPClientAppDelegate : NSObject <NSApplicationDelegate>
 {
-    TL_INetUDPSyphonSDK*        m_UDPSyphonSDK;
+    TL_INetUDPSyphonSDK_Client* m_UDPSyphonSDKClient;
     
     int                         m_TargetPort;
     
@@ -35,7 +35,7 @@
 
 - (IBAction)ChangedPortTextField:(id)sender;
 
--(TL_INetUDPSyphonSDK*)GetUDPSyphonSDK;
+-(TL_INetUDPSyphonSDK_Client*)GetUDPSyphonSDKClient;
 
 @end
 

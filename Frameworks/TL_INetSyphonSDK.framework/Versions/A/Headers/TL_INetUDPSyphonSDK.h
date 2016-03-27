@@ -9,9 +9,16 @@
 #import <Foundation/Foundation.h>
 #import "TL_INetSyphonSDK.h"
 
+
 @interface TL_INetUDPSyphonSDK : NSObject
 
-//-=-= SERVER SECTION -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-(NSArray*)QueryNetworkInterface;
+
+@end
+
+
+@interface TL_INetUDPSyphonSDK_Server : TL_INetUDPSyphonSDK
+
 //set parameters
 //Default encode type: TCPUDPSyphon::EncodeType_TURBOJPEG
 -(void)SetEncodeType:(TCPUDPSyphonEncodeType)encodetype;
@@ -32,9 +39,11 @@
 -(NSString*)GetServerAverageFPS;
 -(unsigned int)GetServerSendingDataSize;
 
-//-=-= SERVER SECTION -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+@end
 
-//-=-= CLIENT SECTION -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+@interface TL_INetUDPSyphonSDK_Client : TL_INetUDPSyphonSDK
+
 //Control client
 -(void)StartClient:(CGLContextObj)cgl_ctx Port:(NSUInteger)port MulticastGroup:(NSString*)multicastgroup SourceIPAddress:(NSString*)sourceIPAddress;
 -(void)StopClient:(CGLContextObj)cgl_ctx;
@@ -45,12 +54,5 @@
 //get information
 -(NSString*)GetClientAverageFPS;
 -(unsigned int)GetClientDropFrameCounter;
-
-//-=-= CLIENT SECTION -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
-
-// COMMON-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
--(NSArray*)QueryNetworkInterface;
-// COMMON-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 @end

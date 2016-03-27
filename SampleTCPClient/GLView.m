@@ -15,8 +15,8 @@
 
 -(void)setup
 {    
-    m_TCPSyphonSDK = [[TL_INetTCPSyphonSDK alloc] init];
-    [m_TCPSyphonSDK StartClient];
+    m_TCPSyphonSDKClient = [[TL_INetTCPSyphonSDK_Client alloc] init];
+    [m_TCPSyphonSDKClient StartClient];
 }
 
 
@@ -68,9 +68,9 @@
     glClearColor(0.0,0.0,0.0,0.0);
     glClear( GL_COLOR_BUFFER_BIT );
     
-    [m_TCPSyphonSDK ClientIdle:cgl_ctx];
+    [m_TCPSyphonSDKClient ClientIdle:cgl_ctx];
     
-    if ( ![m_TCPSyphonSDK GetReceiveTextureFromTCPSyphonServer:&texture Resolution:&texturesize TextureTarget:&texturetarget] )
+    if ( ![m_TCPSyphonSDKClient GetReceiveTextureFromTCPSyphonServer:&texture Resolution:&texturesize TextureTarget:&texturetarget] )
     {
         glColor4f( 1,1,1, 1.0f );
         
@@ -103,9 +103,9 @@
 }
 
 
--(TL_INetTCPSyphonSDK*)GetTCPSyphonSDK
+-(TL_INetTCPSyphonSDK_Client*)GetTCPSyphonSDKClient
 {
-    return m_TCPSyphonSDK;
+    return m_TCPSyphonSDKClient;
 }
 
 

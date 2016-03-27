@@ -37,13 +37,13 @@ CVReturn displayLinkCallback(CVDisplayLinkRef displayLink,
         displayLink = NULL;
         sharedContext = [[NSOpenGLContext alloc] initWithFormat:[self createGLPixelFormat] shareContext:nil];
         
-        m_UDPSyphonSDK = [[TL_INetUDPSyphonSDK alloc] init];
+        m_UDPSyphonSDKServer = [[TL_INetUDPSyphonSDK_Server alloc] init];
         
-        [m_UDPSyphonSDK SetEncodeType:TCPUDPSyphonEncodeType_TURBOJPEG];
-        [m_UDPSyphonSDK SetEncodeQuality:0.75f];
-        [m_UDPSyphonSDK SetServerRequestFPS:10];
+        [m_UDPSyphonSDKServer SetEncodeType:TCPUDPSyphonEncodeType_TURBOJPEG];
+        [m_UDPSyphonSDKServer SetEncodeQuality:0.75f];
+        [m_UDPSyphonSDKServer SetServerRequestFPS:10];
         
-        interfaces = [m_UDPSyphonSDK QueryNetworkInterface];
+        interfaces = [m_UDPSyphonSDKServer QueryNetworkInterface];
         for (NSDictionary* inf in interfaces) NSLog( @"%@", inf );
         
         //At least we must choose 1 ip-address.
@@ -97,7 +97,7 @@ CVReturn displayLinkCallback(CVDisplayLinkRef displayLink,
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     CVDisplayLinkStop( displayLink );
     
-    [m_UDPSyphonSDK StopServer];
+    [m_UDPSyphonSDKServer StopServer];
 }
 
 
@@ -165,7 +165,7 @@ CVReturn displayLinkCallback(CVDisplayLinkRef displayLink,
             break;
     }
     
-    [m_UDPSyphonSDK StartServer:(UDPMethodType)methodType IPAddress:ip Port:port  SourceIPAddress:m_MyIPAddress];
+    [m_UDPSyphonSDKServer StartServer:(UDPMethodType)methodType IPAddress:ip Port:port  SourceIPAddress:m_MyIPAddress];
 }
 
 
@@ -184,9 +184,9 @@ CVReturn displayLinkCallback(CVDisplayLinkRef displayLink,
 
 
 
--(TL_INetUDPSyphonSDK*)GetUDPSyphonSDK
+-(TL_INetUDPSyphonSDK_Server*)GetUDPSyphonSDKServer
 {
-    return  m_UDPSyphonSDK;
+    return  m_UDPSyphonSDKServer;
 }
 
 

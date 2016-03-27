@@ -87,8 +87,7 @@ CVReturn displayLinkCallback(CVDisplayLinkRef displayLink,
     int i;
     
     [m_TCPSyphonServerPopupButton removeAllItems];
-    
-    TL_INetTCPSyphonSDK*    sdk = [glView GetTCPSyphonSDK];
+    TL_INetTCPSyphonSDK_Client*    sdk = [glView GetTCPSyphonSDKClient];
     
     i = 0;
     NSArray*    servers = [sdk GetTCPSyphonServerInformation];
@@ -119,7 +118,7 @@ CVReturn displayLinkCallback(CVDisplayLinkRef displayLink,
 - (IBAction)ChangedTCPSyphonServerPopupButton:(id)sender {
     NSString*   selectedname = [sender titleOfSelectedItem];
     
-    TL_INetTCPSyphonSDK*    sdk = [glView GetTCPSyphonSDK];
+    TL_INetTCPSyphonSDK_Client*    sdk = [glView GetTCPSyphonSDKClient];
     [sdk ConnectToTCPSyphonServerByName:selectedname];
 }
 

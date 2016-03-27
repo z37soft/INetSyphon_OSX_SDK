@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		am2ntLqr0PIefaNeTEpQ1RAqCVM=
+		MPXnlhprSUjyn3FmmJVZNnmqI6U=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -17,11 +17,11 @@
 		</data>
 		<key>Headers/TL_INetTCPSyphonSDK.h</key>
 		<data>
-		B/SlW2JPmMypV9QVQM7ISu8GZf8=
+		JnwOJb3D0Z3koSM22kodr+I/GCc=
 		</data>
 		<key>Headers/TL_INetUDPSyphonSDK.h</key>
 		<data>
-		t9aSKXtq12u3BrjW415fFMNFLzg=
+		r+MAFISUSntXSHYdqCIA3ECFyyo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -29,7 +29,7 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		am2ntLqr0PIefaNeTEpQ1RAqCVM=
+		MPXnlhprSUjyn3FmmJVZNnmqI6U=
 		</data>
 	</dict>
 	<key>rules</key>

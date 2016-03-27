@@ -12,12 +12,12 @@
 @interface GLView : NSOpenGLView {
     BOOL                    needsReshape;
     
-    TL_INetTCPSyphonSDK*    m_TCPSyphonSDK;
+    TL_INetTCPSyphonSDK_Client*    m_TCPSyphonSDKClient;
 }
 
 -(void)setup;
 -(void)draw;
 
--(TL_INetTCPSyphonSDK*)GetTCPSyphonSDK;
+-(TL_INetTCPSyphonSDK_Client*)GetTCPSyphonSDKClient;
 
 @end

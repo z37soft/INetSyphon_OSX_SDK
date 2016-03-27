@@ -12,7 +12,7 @@
 
 @interface UDPServerAppDelegate : NSObject <NSApplicationDelegate>
 {
-    TL_INetUDPSyphonSDK*        m_UDPSyphonSDK;
+    TL_INetUDPSyphonSDK_Server* m_UDPSyphonSDKServer;
 
     NSString*                   m_MyIPAddress;
     NSString*                   m_MyBroadcastAddress;
@@ -36,7 +36,7 @@
 
 - (NSOpenGLPixelFormat *) createGLPixelFormat;
 
--(TL_INetUDPSyphonSDK*)GetUDPSyphonSDK;
+-(TL_INetUDPSyphonSDK_Server*)GetUDPSyphonSDKServer;
 
 @end
 

@@ -42,7 +42,7 @@
     
     CGLLockContext(cgl_ctx);
     
-    TL_INetUDPSyphonSDK*    sdk = [theApp GetUDPSyphonSDK];
+    TL_INetUDPSyphonSDK_Client*    sdk = [theApp GetUDPSyphonSDKClient];
 
     NSRect bounds = self.bounds;
     

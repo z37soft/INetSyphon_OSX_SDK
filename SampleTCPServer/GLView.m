@@ -14,12 +14,12 @@
 
 -(void)setup
 {
-    m_TCPSyphonSDK = [[TL_INetTCPSyphonSDK alloc] init];
-    [m_TCPSyphonSDK SetRequestPort:0];//If you want to set a fixed port, you can set it at here. zero is default(choose automatically).
-    [m_TCPSyphonSDK StartServer:@"SimpleTCPServer"];
+    m_TCPSyphonSDKServer = [[TL_INetTCPSyphonSDK_Server alloc] init];
+    [m_TCPSyphonSDKServer SetRequestPort:0];//If you want to set a fixed port, you can set it at here. zero is default(choose automatically).
+    [m_TCPSyphonSDKServer StartServer:@"SimpleTCPServer"];
     
-    [m_TCPSyphonSDK SetEncodeType:TCPUDPSyphonEncodeType_TURBOJPEG];
-    [m_TCPSyphonSDK SetEncodeQuality:0.5f];
+    [m_TCPSyphonSDKServer SetEncodeType:TCPUDPSyphonEncodeType_TURBOJPEG];
+    [m_TCPSyphonSDKServer SetEncodeQuality:0.5f];
 }
 
 
@@ -116,7 +116,7 @@
     glCopyTexSubImage2D( GL_TEXTURE_RECTANGLE_EXT, 0, 0, 0, 0, 0, bounds.size.width, bounds.size.height );
 
     //supports GL_RGBA, GL_UNSIGNED_BYTE and GL_TEXTURE_RECTANGLE_EXT only.
-    [m_TCPSyphonSDK SetSendImageByGLTexture:cgl_ctx Texture:m_SyphonCopyTexture Width:bounds.size.width Height:bounds.size.height];
+    [m_TCPSyphonSDKServer SetSendImageByGLTexture:cgl_ctx Texture:m_SyphonCopyTexture Width:bounds.size.width Height:bounds.size.height];
     
     glFlush();
     

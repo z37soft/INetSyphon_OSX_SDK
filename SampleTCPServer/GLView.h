@@ -14,8 +14,8 @@
     
     float               rotationRad;
     
-    TL_INetTCPSyphonSDK*    m_TCPSyphonSDK;
-    GLuint                  m_SyphonCopyTexture;
+    TL_INetTCPSyphonSDK_Server*    m_TCPSyphonSDKServer;
+    GLuint                         m_SyphonCopyTexture;
 }
 
 -(void)setup;

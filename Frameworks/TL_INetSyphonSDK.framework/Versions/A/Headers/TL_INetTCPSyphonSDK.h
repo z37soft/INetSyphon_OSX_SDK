@@ -11,9 +11,9 @@
 
 #define TL_INetSyphonSDK_ChangeTCPSyphonServerListNotification   @"TL_INetSyphonSDK_ChangeTCPSyphonServerListNotification"
 
-@interface TL_INetTCPSyphonSDK : NSObject
 
-//-=-= SERVER SECTION -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+@interface TL_INetTCPSyphonSDK_Server : NSObject
+
 //Control server
 -(void)StartServer:(NSString*)appname;
 -(void)StopServer;
@@ -36,9 +36,13 @@
 -(NSArray*)GetTCPSyphonClientInformation;
 -(unsigned int)GetSendingDataSize;
 -(NSString*)GetServerAverageFPS;
-//-=-= SERVER SECTION -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-//-=-= CLIENT SECTION -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+@end
+
+
+
+@interface TL_INetTCPSyphonSDK_Client : NSObject
+
 //Control client
 -(void)StartClient;
 -(void)StopClient:(CGLContextObj)cgl_ctx;
@@ -55,6 +59,6 @@
 -(int)GetReceiveTextureFromTCPSyphonServer:(GLuint*)texture Resolution:(NSSize*)texturesize TextureTarget:(GLenum*)texturetarget;
 
 -(NSArray*)GetTCPSyphonServerInformation;
-//-=-= CLIENT SECTION -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 @end
+
