@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>SampleMultiTCPServer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>SampleTCPClient.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -32,6 +37,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>D51551D81CACC10B0034E9FF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>D58FF38A1C1B36B4007F3324</key>
 		<dict>
 			<key>primary</key>

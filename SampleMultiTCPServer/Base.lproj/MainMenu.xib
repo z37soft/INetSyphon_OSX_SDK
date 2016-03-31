@@ -14,18 +14,21 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
-                <outlet property="glView" destination="jCv-hq-9Yi" id="UWc-EZ-z4p"/>
-                <outlet property="window" destination="QvC-M9-y7g" id="2LG-J2-PMh"/>
+                <outlet property="glView1" destination="sMt-Ir-Rg0" id="8gE-97-YrB"/>
+                <outlet property="glView2" destination="JVo-IG-TJ5" id="8Se-a4-LCU"/>
+                <outlet property="glView3" destination="WAD-h4-k6q" id="Dbv-bp-yHd"/>
+                <outlet property="glView4" destination="pbF-Dm-GTx" id="ZFV-Gk-nzM"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="ZIK-64-fGR"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
-                <menuItem title="SampleTCPServer" id="1Xt-HY-uBw">
+                <menuItem title="SampleMultiTCPServer" id="1Xt-HY-uBw">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="SampleTCPServer" systemMenu="apple" id="uQy-DD-JDr">
+                    <menu key="submenu" title="SampleMultiTCPServer" systemMenu="apple" id="uQy-DD-JDr">
                         <items>
-                            <menuItem title="About SampleTCPServer" id="5kV-Vb-QxS">
+                            <menuItem title="About SampleMultiTCPServer" id="5kV-Vb-QxS">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
@@ -39,7 +42,7 @@
                                 <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                            <menuItem title="Hide SampleTCPServer" keyEquivalent="h" id="Olw-nP-bQN">
+                            <menuItem title="Hide SampleMultiTCPServer" keyEquivalent="h" id="Olw-nP-bQN">
                                 <connections>
                                     <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
                                 </connections>
@@ -57,7 +60,7 @@
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                            <menuItem title="Quit SampleTCPServer" keyEquivalent="q" id="4sb-4s-VLi">
+                            <menuItem title="Quit SampleMultiTCPServer" keyEquivalent="q" id="4sb-4s-VLi">
                                 <connections>
                                     <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
                                 </connections>
@@ -658,7 +661,7 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                         <items>
-                            <menuItem title="SampleTCPServer Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                            <menuItem title="SampleMultiTCPServer Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                 <connections>
                                     <action selector="showHelp:" target="-1" id="y7X-2Q-9no"/>
                                 </connections>
@@ -668,26 +671,30 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="SampleTCPServer" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+        <window title="SampleMultiTCPServer" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
+            <rect key="contentRect" x="335" y="390" width="480" height="368"/>
             <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                <rect key="frame" x="0.0" y="0.0" width="480" height="368"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <openGLView useAuxiliaryDepthBufferStencil="NO" allowOffline="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jCv-hq-9Yi" customClass="GLView">
-                        <rect key="frame" x="20" y="20" width="440" height="320"/>
+                    <openGLView fixedFrame="YES" useAuxiliaryDepthBufferStencil="NO" allowOffline="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sMt-Ir-Rg0" customClass="GLView">
+                        <rect key="frame" x="20" y="195" width="205" height="153"/>
+                    </openGLView>
+                    <openGLView fixedFrame="YES" useAuxiliaryDepthBufferStencil="NO" allowOffline="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WAD-h4-k6q" customClass="GLView">
+                        <rect key="frame" x="20" y="20" width="205" height="153"/>
+                    </openGLView>
+                    <openGLView fixedFrame="YES" useAuxiliaryDepthBufferStencil="NO" allowOffline="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JVo-IG-TJ5" customClass="GLView">
+                        <rect key="frame" x="255" y="195" width="205" height="153"/>
+                    </openGLView>
+                    <openGLView fixedFrame="YES" useAuxiliaryDepthBufferStencil="NO" allowOffline="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pbF-Dm-GTx" customClass="GLView">
+                        <rect key="frame" x="255" y="20" width="205" height="153"/>
                     </openGLView>
                 </subviews>
-                <constraints>
-                    <constraint firstAttribute="bottom" secondItem="jCv-hq-9Yi" secondAttribute="bottom" constant="20" id="Wb9-gy-t0l"/>
-                    <constraint firstItem="jCv-hq-9Yi" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="a1B-Dc-buh"/>
-                    <constraint firstAttribute="trailing" secondItem="jCv-hq-9Yi" secondAttribute="trailing" constant="20" id="p5Q-eQ-DlQ"/>
-                    <constraint firstItem="jCv-hq-9Yi" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="v54-7g-8eL"/>
-                </constraints>
             </view>
+            <point key="canvasLocation" x="425" y="455"/>
         </window>
     </objects>
 </document>

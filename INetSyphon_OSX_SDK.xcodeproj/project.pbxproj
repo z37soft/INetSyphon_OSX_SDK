@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D51551DD1CACC10B0034E9FF /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = D51551DC1CACC10B0034E9FF /* AppDelegate.mm */; };
+		D51551E01CACC10B0034E9FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D51551DF1CACC10B0034E9FF /* main.m */; };
+		D51551E21CACC10B0034E9FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D51551E11CACC10B0034E9FF /* Assets.xcassets */; };
+		D51551E51CACC10B0034E9FF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51551E31CACC10B0034E9FF /* MainMenu.xib */; };
+		D51551EC1CACC2150034E9FF /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = D51551EB1CACC2150034E9FF /* GLView.m */; };
+		D51551EE1CACC2FB0034E9FF /* TL_INetSyphonSDK.framework in Copy Framework Files */ = {isa = PBXBuildFile; fileRef = D5B4B5131C1431ED003F3EEE /* TL_INetSyphonSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D51551F01CACC3190034E9FF /* libturbojpeg.0.dylib in Copy TurboJpeg Files */ = {isa = PBXBuildFile; fileRef = D5B4B48B1C1421C4003F3EEE /* libturbojpeg.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D58FF38F1C1B36B4007F3324 /* UDPServerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D58FF38E1C1B36B4007F3324 /* UDPServerAppDelegate.m */; };
 		D58FF3921C1B36B4007F3324 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D58FF3911C1B36B4007F3324 /* main.m */; };
 		D58FF3941C1B36B4007F3324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D58FF3931C1B36B4007F3324 /* Assets.xcassets */; };
@@ -42,6 +49,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		D51551ED1CACC2EC0034E9FF /* Copy Framework Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D51551EE1CACC2FB0034E9FF /* TL_INetSyphonSDK.framework in Copy Framework Files */,
+			);
+			name = "Copy Framework Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D51551EF1CACC3030034E9FF /* Copy TurboJpeg Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				D51551F01CACC3190034E9FF /* libturbojpeg.0.dylib in Copy TurboJpeg Files */,
+			);
+			name = "Copy TurboJpeg Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D58FF3B21C1B484C007F3324 /* Copy TurboJpeg Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,6 +162,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D51551D91CACC10B0034E9FF /* SampleMultiTCPServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleMultiTCPServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D51551DB1CACC10B0034E9FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D51551DC1CACC10B0034E9FF /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		D51551DF1CACC10B0034E9FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D51551E11CACC10B0034E9FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D51551E41CACC10B0034E9FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D51551E61CACC10B0034E9FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D51551EA1CACC2150034E9FF /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
+		D51551EB1CACC2150034E9FF /* GLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLView.m; sourceTree = "<group>"; };
 		D58FF38B1C1B36B4007F3324 /* SampleUDPServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleUDPServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58FF38D1C1B36B4007F3324 /* UDPServerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UDPServerAppDelegate.h; sourceTree = "<group>"; };
 		D58FF38E1C1B36B4007F3324 /* UDPServerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UDPServerAppDelegate.m; sourceTree = "<group>"; };
@@ -174,6 +212,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D51551D61CACC10B0034E9FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D58FF3881C1B36B4007F3324 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -209,6 +254,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D51551DA1CACC10B0034E9FF /* SampleMultiTCPServer */ = {
+			isa = PBXGroup;
+			children = (
+				D51551DB1CACC10B0034E9FF /* AppDelegate.h */,
+				D51551DC1CACC10B0034E9FF /* AppDelegate.mm */,
+				D51551EA1CACC2150034E9FF /* GLView.h */,
+				D51551EB1CACC2150034E9FF /* GLView.m */,
+				D51551E11CACC10B0034E9FF /* Assets.xcassets */,
+				D51551E31CACC10B0034E9FF /* MainMenu.xib */,
+				D51551E61CACC10B0034E9FF /* Info.plist */,
+				D51551DE1CACC10B0034E9FF /* Supporting Files */,
+			);
+			path = SampleMultiTCPServer;
+			sourceTree = "<group>";
+		};
+		D51551DE1CACC10B0034E9FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D51551DF1CACC10B0034E9FF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D58FF38C1C1B36B4007F3324 /* SampleUDPServer */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +332,7 @@
 				D5B4B4FA1C142DC6003F3EEE /* SampleTCPClient */,
 				D58FF38C1C1B36B4007F3324 /* SampleUDPServer */,
 				D58FF3A11C1B3890007F3324 /* SampleUDPClient */,
+				D51551DA1CACC10B0034E9FF /* SampleMultiTCPServer */,
 				D5B4B4611C141F50003F3EEE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -275,6 +344,7 @@
 				D5B4B4F91C142DC5003F3EEE /* SampleTCPClient.app */,
 				D58FF38B1C1B36B4007F3324 /* SampleUDPServer.app */,
 				D58FF3A01C1B3890007F3324 /* SampleUDPClient.app */,
+				D51551D91CACC10B0034E9FF /* SampleMultiTCPServer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -344,6 +414,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D51551D81CACC10B0034E9FF /* SampleMultiTCPServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D51551E91CACC10B0034E9FF /* Build configuration list for PBXNativeTarget "SampleMultiTCPServer" */;
+			buildPhases = (
+				D51551D51CACC10B0034E9FF /* Sources */,
+				D51551D61CACC10B0034E9FF /* Frameworks */,
+				D51551D71CACC10B0034E9FF /* Resources */,
+				D51551ED1CACC2EC0034E9FF /* Copy Framework Files */,
+				D51551EF1CACC3030034E9FF /* Copy TurboJpeg Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleMultiTCPServer;
+			productName = SampleMultiTCPServer;
+			productReference = D51551D91CACC10B0034E9FF /* SampleMultiTCPServer.app */;
+			productType = "com.apple.product-type.application";
+		};
 		D58FF38A1C1B36B4007F3324 /* SampleUDPServer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D58FF39B1C1B36B4007F3324 /* Build configuration list for PBXNativeTarget "SampleUDPServer" */;
@@ -429,6 +518,9 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "TECHLIFE SG Pte.Ltd.";
 				TargetAttributes = {
+					D51551D81CACC10B0034E9FF = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 					D58FF38A1C1B36B4007F3324 = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -460,11 +552,21 @@
 				D5B4B4F81C142DC5003F3EEE /* SampleTCPClient */,
 				D58FF38A1C1B36B4007F3324 /* SampleUDPServer */,
 				D58FF39F1C1B3890007F3324 /* SampleUDPClient */,
+				D51551D81CACC10B0034E9FF /* SampleMultiTCPServer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D51551D71CACC10B0034E9FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51551E21CACC10B0034E9FF /* Assets.xcassets in Resources */,
+				D51551E51CACC10B0034E9FF /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D58FF3891C1B36B4007F3324 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -504,6 +606,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D51551D51CACC10B0034E9FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51551E01CACC10B0034E9FF /* main.m in Sources */,
+				D51551DD1CACC10B0034E9FF /* AppDelegate.mm in Sources */,
+				D51551EC1CACC2150034E9FF /* GLView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D58FF3871C1B36B4007F3324 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -547,6 +659,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		D51551E31CACC10B0034E9FF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D51551E41CACC10B0034E9FF /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
 		D58FF3951C1B36B4007F3324 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -582,6 +702,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D51551E71CACC10B0034E9FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = SampleMultiTCPServer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.techlife.SampleMultiTCPServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D51551E81CACC10B0034E9FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = SampleMultiTCPServer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.techlife.SampleMultiTCPServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		D58FF3991C1B36B4007F3324 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -814,6 +979,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D51551E91CACC10B0034E9FF /* Build configuration list for PBXNativeTarget "SampleMultiTCPServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D51551E71CACC10B0034E9FF /* Debug */,
+				D51551E81CACC10B0034E9FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D58FF39B1C1B36B4007F3324 /* Build configuration list for PBXNativeTarget "SampleUDPServer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -821,6 +994,7 @@
 				D58FF39A1C1B36B4007F3324 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D58FF3AE1C1B3890007F3324 /* Build configuration list for PBXNativeTarget "SampleUDPClient" */ = {
 			isa = XCConfigurationList;
@@ -829,6 +1003,7 @@
 				D58FF3B01C1B3890007F3324 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5B4B45B1C141F50003F3EEE /* Build configuration list for PBXProject "INetSyphon_OSX_SDK" */ = {
 			isa = XCConfigurationList;
