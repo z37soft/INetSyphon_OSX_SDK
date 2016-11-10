@@ -19,8 +19,6 @@ CVReturn displayLinkCallback(CVDisplayLinkRef displayLink,
 
 @interface AppDelegate ()
 
-- (IBAction)ClickedDebugButton:(id)sender;
-
 @end
 
 
@@ -118,9 +116,5 @@ CVReturn displayLinkCallback(CVDisplayLinkRef displayLink,
     return kCVReturnSuccess;
 }
 
-
-- (IBAction)ClickedDebugButton:(id)sender {
-    [glView ReMake];
-}
 
 @end
