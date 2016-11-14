@@ -19,6 +19,7 @@
 }
 
 -(void)setup;
+-(void)stop;
 -(void)draw;
 
 @end

@@ -73,6 +73,9 @@ CVReturn displayLinkCallback(CVDisplayLinkRef displayLink,
 
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
+
+    [glView stop];
+    
     CVDisplayLinkStop( displayLink );
 }
 

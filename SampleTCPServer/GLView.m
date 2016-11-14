@@ -23,6 +23,16 @@
 }
 
 
+-(void)stop
+{
+    //You must call "StopServer" before you release a TL_INetTCPSyphonSDK_Server instance.
+    //Because bonjour service will try keeping their instance. So the release will be delayed too.
+    [m_TCPSyphonSDKServer StopServer];
+    [m_TCPSyphonSDKServer release];
+    m_TCPSyphonSDKServer = nil;
+}
+
+
 - (void)reshape
 {
     needsReshape = YES;
