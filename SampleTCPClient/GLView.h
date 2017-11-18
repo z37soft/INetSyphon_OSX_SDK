@@ -12,6 +12,8 @@
 @interface GLView : NSOpenGLView {
     BOOL                    needsReshape;
     
+    NSRect                  bounds;
+
     TL_INetTCPSyphonSDK_Client*    m_TCPSyphonSDKClient;
 }
 

@@ -15,6 +15,8 @@
     
     float               rotationRad;
     
+    NSRect              bounds;
+
     GLuint              m_SyphonCopyTexture;
 }
 

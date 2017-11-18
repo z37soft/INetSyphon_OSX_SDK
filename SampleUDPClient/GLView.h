@@ -11,7 +11,9 @@
 
 @interface GLView : NSOpenGLView
 {
-    BOOL                    needsReshape;
+    BOOL                needsReshape;
+
+    NSRect              bounds;
 }
 
 -(void)setup;

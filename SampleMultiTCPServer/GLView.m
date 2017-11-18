@@ -14,12 +14,15 @@
 
 -(void)setup:(NSString*)name type:(int)type
 {
+    bounds = self.bounds;
+
     shape_type = type;
     
     m_TCPSyphonSDKServer = [[TL_INetTCPSyphonSDK_Server alloc] init];
     [m_TCPSyphonSDKServer SetRequestPort:0];//If you want to set a fixed port, you can set it at here. zero is default(choose automatically).
     [m_TCPSyphonSDKServer StartServer:name];
     
+    [m_TCPSyphonSDKServer SetRequestFramerate:20];
     [m_TCPSyphonSDKServer SetEncodeType:TCPUDPSyphonEncodeType_TURBOJPEG];
     [m_TCPSyphonSDKServer SetEncodeQuality:0.5f];
 }
@@ -33,6 +36,8 @@
 
 - (void)update
 {
+    bounds = self.bounds;
+    
     CGLLockContext([[self openGLContext] CGLContextObj]);
     [super update];
     CGLUnlockContext([[self openGLContext] CGLContextObj]);
@@ -69,8 +74,6 @@
     CGLContextObj cgl_ctx = [[self openGLContext] CGLContextObj];
     
     CGLLockContext(cgl_ctx);
-    
-    NSRect bounds = self.bounds;
     
     if (needsReshape)
     {

@@ -15,6 +15,7 @@
 
 -(void)setup
 {
+    bounds = self.bounds;
 }
 
 
@@ -26,6 +27,8 @@
 
 - (void)update
 {
+    bounds = self.bounds;
+    
     CGLLockContext([[self openGLContext] CGLContextObj]);
     [super update];
     CGLUnlockContext([[self openGLContext] CGLContextObj]);
@@ -64,8 +67,6 @@
     CGLLockContext(cgl_ctx);
     
     TL_INetUDPSyphonSDK_Server*    sdk = [theApp GetUDPSyphonSDKServer];
-
-    NSRect bounds = self.bounds;
     
     if (needsReshape)
     {

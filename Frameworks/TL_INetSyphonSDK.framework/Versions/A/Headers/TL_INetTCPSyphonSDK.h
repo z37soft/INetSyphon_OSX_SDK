@@ -30,6 +30,8 @@
 -(void)SetEncodeQuality:(float)quality;
 //If you want to set a fixed network port, then you should use this method. 0 is default(choose automatically).
 -(void)SetRequestPort:(int)port;
+//Prefer sender framerate ( default 30 fps )
+-(void)SetRequestFramerate:(int)fps;
 
 //get information
 -(NSDictionary*)GetSyphonServerInformation;

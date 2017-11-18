@@ -13,6 +13,8 @@
 {
     BOOL                            m_NeedsReshape;
     
+    NSRect                          bounds;
+
     TL_INetTCPSyphonSDK_Client*     m_TCPSyphonSDKClient;
 }
 

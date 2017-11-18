@@ -14,7 +14,9 @@
     
     int                 shape_type;
     float               rotationRad;
-    
+
+    NSRect              bounds;
+
     TL_INetTCPSyphonSDK_Server*    m_TCPSyphonSDKServer;
     GLuint                         m_SyphonCopyTexture;
 }

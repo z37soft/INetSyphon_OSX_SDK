@@ -15,6 +15,8 @@
 
 -(void)setup
 {    
+    bounds = self.bounds;
+    
     m_TCPSyphonSDKClient = [[TL_INetTCPSyphonSDK_Client alloc] init];
     [m_TCPSyphonSDKClient StartClient];
 }
@@ -28,6 +30,8 @@
 
 - (void)update
 {
+    bounds = self.bounds;
+
     CGLLockContext([[self openGLContext] CGLContextObj]);
     [super update];
     CGLUnlockContext([[self openGLContext] CGLContextObj]);
@@ -42,9 +46,7 @@
     CGLContextObj cgl_ctx = [[self openGLContext] CGLContextObj];
     
     CGLLockContext(cgl_ctx);
-    
-    NSRect bounds = self.bounds;
-    
+        
     if (needsReshape)
     {
         glDisable(GL_DEPTH_TEST);
